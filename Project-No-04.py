@@ -1,3 +1,10 @@
+# QUESTION NO 04:
+# Write a Python program that:
+# Asks the user for their name, age, role, education, and favourite color.
+# Prints a welcome header.
+# Displays a personalized greeting message using f-strings, incorporating all the details the user entered.
+
+
 # Personalized Greeting Program
 
 # Step No 01: Ask For User Details
