@@ -6,6 +6,6 @@
 # Prints "Welcome To Python Programming" on the next line.
 
 print("\n------------ Greeting Generator ------------")
-name = input("Enter Your Name?\n")
+name = input("Enter Your Name? \n")
 print("Hello! " + name)
 print("Welcome To Python Programming")
