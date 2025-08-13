@@ -24,7 +24,6 @@ hotel_price = float(input("How much does hotel price? \n $"))
 flight_price = float(input("How much does flight price? \n $"))
 rental_car = float(input("If you need a car please enter price otherwise enter 0? \n $"))
 other_expenses = int(input("Enter other expenses? \n $"))
-                           
 total_cost = round(days * hotel_price + flight_price + days * rental_car + other_expenses, 2)
 
 print(f"Total Cost: ${total_cost}")
