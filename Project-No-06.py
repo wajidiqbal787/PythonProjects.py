@@ -11,4 +11,4 @@ rate = input("Enter Rate: \n")
 newhour = float(hour)
 newrate = float(rate)
 
-print(newhour * newrate)
+print(f"{newhour * newrate}")
