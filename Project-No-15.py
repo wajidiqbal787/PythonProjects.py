@@ -11,7 +11,7 @@ print("\n------------ Welcome To Mortgage Calculator ------------")
 salary = int(input("What is your Salary? \n"))
 
 if salary >= 20000:
-    print("Your salary is normal.")
+    print("Congratulations You Are Eligible For Mortgage.")
 
 
 else:
