@@ -19,23 +19,23 @@
 
 
 
-# User se input lena
+# User Input
 try:
-    amount = float(input("Total purchase amount daalein (Rs.): "))
+    amount = float(input("Enter Total Purchase Amount: "))
 except ValueError:
-    print("Invalid amount. Sirf numbers daalein.")
+    print("Invalid amount, Enter Only Number.")
     exit()
 
-customer_type = input("Customer type daalein (Regular/Premium/VIP): ").strip().lower()
-coupon = input("Kya coupon hai? (Yes/No): ").strip().lower()
+customer_type = input("Customer Type (Regular/Premium/VIP): ").strip().lower()
+coupon = input("Have You Any Coupon? (Yes/No): ").strip().lower()
 
-# Valid values define karna
+# Valid Values
 valid_customers = ['regular', 'premium', 'vip']
 valid_coupons = ['yes', 'no']
 
 # Input validation
 if amount < 0:
-    print("Invalid amount. Negative value allowed nahi hai.")
+    print("Invalid amount. Negative value is not allowed.")
 elif customer_type not in valid_customers:
     print("Invalid customer type.")
 elif coupon not in valid_coupons:
@@ -49,10 +49,10 @@ else:
     elif customer_type == 'vip':
         discount = 0.20 if amount >= 1000 else 0
 
-    # Discount apply karna
+    # Discount Apply
     discounted_price = amount * (1 - discount)
 
-    # Coupon ka extra discount
+    # Coupon Extra Discount
     if coupon == 'yes':
         discounted_price *= 0.95  # extra 5% off
 
